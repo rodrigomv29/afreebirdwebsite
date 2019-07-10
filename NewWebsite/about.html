@@ -1,0 +1,749 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Free Bird</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/css/all.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css"
+    <link rel="stylesheet" href="/Content/css/hover-min.css">
+    <link rel="stylesheet" href="/Content/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+    .linkwraplink{
+     background-color:#222222;
+    }
+    </style>
+
+
+</head>
+
+<body id="top" role="document">
+ <nav class="navbar navbar-default navbar-fixed-top smooth yellow   landing-nav" data-spy="affix" data-offset-top="50"     >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand pull-right visible-xs">
+                 <img src="/Content/images/AFB_Logo.png">
+                </a>
+               
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <div class="menu-up-fix">
+                    
+                    <div style="float:right">
+                        <div class="social">
+                            <a href="https://twitter.com/AFreeBirdOrg">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.facebook.com/I-Am-A-Free-Bird-322794984718926/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/afreebirdorg/">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/AFreeBirdOrg">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="/">Home</a></li>
+
+                    <li><a href="/about">About us</a></li>
+
+                    <!--<li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Tutors
+                                <span class="caret"></span>
+                                <span class="caret-mobile"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/tutors">Our tutors</a></li>
+                                <li><a href="/tutor"><s>Become a tutor</s></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank">Magazine</a></li>
+                        <li><a href="/doctor-corner">Doctor's corner</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Programs
+                                <span class="caret"></span>
+                                <span class="caret-mobile"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/fightfree">Fight free</a></li>
+                                <li><a href="/freepro">Free and Pro</a></li>
+                                <li><a href="/dreaminspiration">Dream Inspiration</a></li>
+                                <li><a href=""><s>Kids supporting kids</s></a></li>
+                                <li><a href=""><s>Artists supporting artists</s></a></li>
+                            </ul>
+                        </li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>Get involved</span>
+                            <span class="caret"></span>
+                            <span class="caret-mobile"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/volunteer"><span>Become a volunteer</span></a></li>
+                            <li><a href="/tutor"><span>Become a tutor</span></a></li>
+                            <li><a href="/intern"><span>Become a intern</span></a></li>
+                            <li><a href="/ambassadors"><span>Become a ambassadors</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/enrollchild.html"><span>Enroll Your Child or Hospital</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>AFB Family</span>
+                            <span class="caret"></span>
+                            <span class="caret-mobile"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/tutors"><span>Tutors</span></a></li>
+                            <!--<li><a href=""><s>AFB Children</s></a></li>-->
+                            <li><a href="/ambassadors"><span>Ambassadors</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/sponsors">Sponsors</a></li>
+                    <li><a href="/goods">Goods</a></li>
+                    <li><a href="#dark">Contact us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>AFB Happenings</span>
+                            <span class="caret"></span>
+                            <span class="caret-mobile"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/event"><span>Events</span></a></li>
+                            <li><a href="/blog"><span>Blog</span></a></li>
+                            <!--<li><a href=""><s>Media Kit</s></a></li>-->
+                            <li><a href="http://online.fliphtml5.com/ynvi/mzfr/"><span>Magazine</span></a></li>
+                            <li><a href="/goods"><span>The Goods</span></a></li>
+                            <!--<li><a href=""><s>I Am Campaign</s></a></li>-->
+                            <li><a href="/doctor-corner"><span>Doctor's Corner</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/sponsors.html">Sponsors</a></li>
+                    <!--li><a href=""><s>Donate</s></a></li-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div role="main">
+        <div id="loader-bg">
+            <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
+            <style type="text/css">
+                .st0 {
+                    fill: none;
+                    stroke: #53351D;
+                    stroke-width: 10;
+                    stroke-miterlimit: 10;
+                }
+
+                .st1 {
+                    fill: none;
+                    stroke: #FFCC00;
+                    stroke-width: 11;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 11;
+                }
+</style>
+            <circle class="st0" cx="30" cy="30" r="24" />
+            <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
+            </svg>
+        </div>
+        
+<section id="lime" class="section content lime decreased-font">
+    <div class="clouds"></div>
+    <div class="grass"></div>
+    <div class="container-narrow">
+        <h1>About us</h1>
+        <div class="about-description">
+            <p>
+               A Free Bird™ is a 501(c)3 nonprofit, arts education organization dedicated to helping young people, ages 4-18, affected by cancer, fight their disease through the therapeutic benefits of the arts.  We do this primarily through progressive, three-stage programming that integrates art therapy with art education and facilitates access to the arts and artistic expression. Our three core programs introduce children to and inspire them to explore the arts (<span class="bold-midle">Dream</span>); match children with artists to educate them in a creative expression of their choice (<span class="bold-midle">Fight Free</span>) and celebrate children as artists by providing them with opportunities to experience life in the artistic field of their choosing, through an exciting day of total immersion (<span class="bold-midle">Free & Free Pro</span>).
+
+            </p>
+            <div class="collapse-button-wrap">
+                <button class="btn-more collapsed" data-toggle="collapse" data-target="#more-about"></button>
+            </div>
+            <div id="more-about" class="collapse">
+                <p>
+                    A Free Bird believes in the immense power of the arts, and is committed to spreading its healing properties to as many children affected by cancer as possible. We believe too, that children are natural artists, and when provided with the right guidance, will demonstrate exceptional talent. To this end, we offer artistic resources in all art forms, and make them available to children with cancer, their parents and hospitals.
+
+                </p>
+                <p>
+                    The artistic careers of our young artists are jump-started and nourished through our three core programs: <span class="bold-midle">Dream</span> (inspires children);<span class="bold-midle">Fight Free</span> (educates children); and <span class="bold-midle">Free & Free Pro</span> (celebrates children). We work closely with museums, dance and theatre companies, art schools and local universities, as well as local artists, musicians, actors, art students and other partners to provide art tutors to children, organize and host arts related activities at hospitals, and create opportunities for artistic growth even when cancer is in remission. In addition to our artistic partners, we also receive support from foundations and corporations, whose generous donations help us develop and maintain our programming.
+
+</p>
+                <p>
+                    A Free Bird was founded and established in New York City in 2008, and became a 501(c)3 tax-exempt organization in January 2011.We are headquartered in New York-New Jersey, and are currently building a national and global reach in our effort to provide aid for children undergoing medical treatment around the world.  This year we are planning to open up a branch office in Israel.
+
+                </p>
+                <p>
+                    A Free Bird is entirely volunteer-based with 100% of all donations and fundraising proceeds going directly towards programming. We were recently recognized by Mayor Bill DeBlasio and NYC Service as one of the city’s most engaged organizations for volunteer service.  
+                </p>
+            </div>
+        </div>
+        <h2>Mission</h2>
+        <p>
+            Our mission is to help children discover the artist within, shape them as artists, and empower each child to fly free.
+
+        </p>
+        <h2>Vision</h2>
+        <p>
+            Every day, 43 children are diagnosed with cancer in the United States. Our vision is to reach each of these children in the early stages of cancer, and inspire them to find the artist within, educate them in an art form of their choosing, and celebrate them as the artists they are—and in the process, instill hope and joy. 
+
+        </p>
+        <h2>Board of Directors</h2>
+        <!-- board of directors tabs -->
+        <ul class="nav nav-tabs directors-list hidden-xs" role="tablist">
+            <li role="presentation" class="text-center">
+                <a href="#godniAmirLiteman" aria-controls="godniAmirLiteman" role="tab" data-toggle="tab">
+                    <img src="../../Content/images/godni-amir-liteman.jpg" alt="godni-amir-liteman" />
+                    <div class="view-bg">
+                        <p class="view-text">
+                            <span class="left-line"></span>
+                            <span>MORE</span>
+                            <span class="right-line"></span>
+                        </p>
+                    </div>
+                </a>
+                <p class="director-name">Godni Amir Liteman</p>
+                <p>President&Creative Director</p>
+            </li>
+            <li role="presentation" class="text-center">
+                <a href="#johnBonanno" aria-controls="johnBonanno" role="tab" data-toggle="tab">
+                    <img src="../../Content/images/john-bonanno.jpg" alt="john-bonanno" />
+                    <div class="view-bg">
+                        <p class="view-text">
+                            <span class="left-line"></span>
+                            <span>MORE</span>
+                            <span class="right-line"></span>
+                        </p>
+                    </div>
+                </a>
+                <p class="director-name">John Bonanno</p>
+                <p>General Counsel</p>
+            </li>
+            <li role="presentation" class="text-center">
+                <a href="#kalpanaPatel" aria-controls="kalpanaPatel" role="tab" data-toggle="tab">
+                    <img src="../../Content/images/kalpana-patel.jpg" alt="kalpana-patel" />
+                    <div class="view-bg">
+                        <p class="view-text">
+                            <span class="left-line"></span>
+                            <span>MORE</span>
+                            <span class="right-line"></span>
+                        </p>
+                    </div>
+                </a>
+                <p class="director-name">Kalpana Patel</p>
+                <p>Director of Programs</p>
+            </li>
+        </ul>
+        <!--temporary markup(just for displaying how it should work on mobile)-->
+        <ul class="nav nav-tabs directors-list" role="tablist">
+            <div class="tab-content visible-xs">
+                <li role="presentation" class="text-center">
+                    <img src="../../Content/images/godni-amir-liteman.jpg" alt="godni-amir-liteman" />
+                    <div class="director-title">
+                        <p class="director-name">Godni Amir Liteman</p>
+                        <p>
+                            President&Creative Director
+                            <button href="#godniAmirLitemanMobile" class="btn-more collapsed" data-toggle="collapse" data-target="#godniAmirLitemanMobile"></button>
+                        </p>
+                    </div>
+                </li>
+                <div class="collapse director-description" id="godniAmirLitemanMobile">
+                    <ul class="list-inline director-description-list">
+                        <li role="presentation" class="active">
+                            <a href="#godniAmirLitemanBioMobile" aria-controls="godniAmirLitemanBioMobile" role="tab" data-toggle="tab">Bio</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#godniAmirLitemanPicturesMobile" aria-controls="godniAmirLitemanPicturesMobile" role="tab" data-toggle="tab">
+                                Pictures
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#godniAmirLitemanPressMobile" aria-controls="godniAmirLitemanPressMobile" role="tab" data-toggle="tab">
+                                Press
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="godniAmirLitemanBioMobile">
+                            <p>Godni Amir Liteman, the founder & creative director of A Free Bird™, is a New York-based singer/songwriter, actor, and makeup artist. Godni was inspired to create A Free Bird, a growing non-profit benefiting artistic children with cancer, after his voice teacher’s husband was diagnosed with cancer. With his strong background in theater, dance, and music, Godni has personally experienced the healing power of the arts.</p>
+                            <p>Through his music, Godni brought comfort and solace to his voice teacher’s family in their time of greatest need. Today, Godni is committed to bringing that same healing power of the arts to young artists affected by cancer who would otherwise be forced to give up their creative outlets during their medical treatments. Through A Free Bird, Godni hopes to create a healing artistic environment for pediatric cancer patients.</p>
+                            <p>Godni’s work as a makeup artist has been prominently featured in print, on the runway, and at private events. His national print work includes covers of Women’s Wear Daily; articles in Intimate Magazine and O, The Oprah Magazine; billboards for Curve, the first documentary to feature plus-size models; features for Infatuation, the Mexican fashion periodical; Peggy Jennings catalog; and more.</p>
+                            <p>Off camera, Godni has worked on looks for U.N. High Commission of Human Rights official Mary Robinson, the Einstein Foundation, and numerous brands during New York Bridal Fashion Week, including Nico & Adrian. He has also served as the artistic director of hair and makeup for Sarantina Bridal and the Tikva Organization by Mark Ecko.</p>
+                            <p>Godni worked with Bobbi Brown and Chanel, working at various events with her throughout New York City. His celebrity clients through Bobbi Brown include Rihanna, Veanne Cox, Brooklyn Sudano, and photographers Gail Hadani and John Healy.</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane pictures" id="godniAmirLitemanPicturesMobile">
+                            <div class="mob-spons-tab">
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane press" id="godniAmirLitemanPressMobile">
+                            <div class="mob-spons-tab clearfix">
+                                <img src="/Content/images/press.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li role="presentation" class="text-center">
+                    <img src="../../Content/images/john-bonanno.jpg" alt="john-bonanno" />
+                    <div class="director-title">
+                        <p class="director-name">John Bonanno</p>
+                        <p>
+                            General Counsel
+                            <button href="#johnBonannoMobile" class="btn-more collapsed" data-toggle="collapse" data-target="#johnBonannoMobile"></button>
+                        </p>
+                    </div>
+                </li>
+                <div class="collapse director-description" id="johnBonannoMobile">
+                    <ul class="list-inline director-description-list">
+                        <li role="presentation" class="active">
+                            <a href="#johnBonannoBioMobile" aria-controls="johnBonannoBioMobile" role="tab" data-toggle="tab">Bio</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#johnBonannoPicturesMobile" aria-controls="johnBonannoPicturesMobile" role="tab" data-toggle="tab">
+                                Pictures
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#johnBonannoPressMobile" aria-controls="johnBonannoPressMobile" role="tab" data-toggle="tab">
+                                Press
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="johnBonannoBioMobile">
+                            <p>Godni Amir Liteman, the founder & creative director of A Free Bird™, is a New York-based singer/songwriter, actor, and makeup artist. Godni was inspired to create A Free Bird, a growing non-profit benefiting artistic children with cancer, after his voice teacher’s husband was diagnosed with cancer. With his strong background in theater, dance, and music, Godni has personally experienced the healing power of the arts.</p>
+                            <p>Through his music, Godni brought comfort and solace to his voice teacher’s family in their time of greatest need. Today, Godni is committed to bringing that same healing power of the arts to young artists affected by cancer who would otherwise be forced to give up their creative outlets during their medical treatments. Through A Free Bird, Godni hopes to create a healing artistic environment for pediatric cancer patients.</p>
+                            <p>Godni’s work as a makeup artist has been prominently featured in print, on the runway, and at private events. His national print work includes covers of Women’s Wear Daily; articles in Intimate Magazine and O, The Oprah Magazine; billboards for Curve, the first documentary to feature plus-size models; features for Infatuation, the Mexican fashion periodical; Peggy Jennings catalog; and more.</p>
+                            <p>Off camera, Godni has worked on looks for U.N. High Commission of Human Rights official Mary Robinson, the Einstein Foundation, and numerous brands during New York Bridal Fashion Week, including Nico & Adrian. He has also served as the artistic director of hair and makeup for Sarantina Bridal and the Tikva Organization by Mark Ecko.</p>
+                            <p>Godni worked with Bobbi Brown and Chanel, working at various events with her throughout New York City. His celebrity clients through Bobbi Brown include Rihanna, Veanne Cox, Brooklyn Sudano, and photographers Gail Hadani and John Healy.</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane pictures" id="johnBonannoPicturesMobile">
+                            <div class="mob-spons-tab">
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane press" id="johnBonannoPressMobile">
+                            <div class="mob-spons-tab clearfix">
+                                <img src="/Content/images/press.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li role="presentation" class="text-center">
+                    <img src="../../Content/images/kalpana-patel.jpg" alt="kalpana-patel" />
+                    <div class="director-title">
+                        <p class="director-name">Kalpana Patel</p>
+                        <p>
+                            Director of Programs
+                            <button href="#kalpanaPatelMobile" class="btn-more collapsed" data-toggle="collapse" data-target="#kalpanaPatelMobile"></button>
+                        </p>
+                    </div>
+                </li>
+                <div class="collapse director-description" id="kalpanaPatelMobile">
+                    <ul class="list-inline director-description-list">
+                        <li role="presentation" class="active">
+                            <a href="#kalpanaPatelBioMobile" aria-controls="kalpanaPatelBioMobile" role="tab" data-toggle="tab">Bio</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#kalpanaPatelPicturesMobile" aria-controls="kalpanaPatelPicturesMobile" role="tab" data-toggle="tab">
+                                Pictures
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#kalpanaPatelPressMobile" aria-controls="kalpanaPatelPressMobile" role="tab" data-toggle="tab">
+                                Press
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="kalpanaPatelBioMobile">
+                            <p>Godni Amir Liteman, the founder & creative director of A Free Bird™, is a New York-based singer/songwriter, actor, and makeup artist. Godni was inspired to create A Free Bird, a growing non-profit benefiting artistic children with cancer, after his voice teacher’s husband was diagnosed with cancer. With his strong background in theater, dance, and music, Godni has personally experienced the healing power of the arts.</p>
+                            <p>Through his music, Godni brought comfort and solace to his voice teacher’s family in their time of greatest need. Today, Godni is committed to bringing that same healing power of the arts to young artists affected by cancer who would otherwise be forced to give up their creative outlets during their medical treatments. Through A Free Bird, Godni hopes to create a healing artistic environment for pediatric cancer patients.</p>
+                            <p>Godni’s work as a makeup artist has been prominently featured in print, on the runway, and at private events. His national print work includes covers of Women’s Wear Daily; articles in Intimate Magazine and O, The Oprah Magazine; billboards for Curve, the first documentary to feature plus-size models; features for Infatuation, the Mexican fashion periodical; Peggy Jennings catalog; and more.</p>
+                            <p>Off camera, Godni has worked on looks for U.N. High Commission of Human Rights official Mary Robinson, the Einstein Foundation, and numerous brands during New York Bridal Fashion Week, including Nico & Adrian. He has also served as the artistic director of hair and makeup for Sarantina Bridal and the Tikva Organization by Mark Ecko.</p>
+                            <p>Godni worked with Bobbi Brown and Chanel, working at various events with her throughout New York City. His celebrity clients through Bobbi Brown include Rihanna, Veanne Cox, Brooklyn Sudano, and photographers Gail Hadani and John Healy.</p>
+                        </div>
+                        <div role="tabpanel" class="tab-pane pictures" id="kalpanaPatelPicturesMobile">
+                            <div class="mob-spons-tab">
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                                <img src="/Content/images/pic-tabs2.png" alt="" />
+                                <img src="/Content/images/pic-tabs1.png" alt="" />
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane press" id="kalpanaPatelPressMobile">
+                            <div class="mob-spons-tab clearfix">
+                                <img src="/Content/images/press.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-warning">All members</button>
+        </ul>
+
+        <div class="tab-content directors-content hidden-xs">
+            <div role="tabpanel" class="tab-pane well fade" id="godniAmirLiteman">
+                <a href="" class="close-icon">
+                    <img src="/Content/images/icons/close-icon.png" />
+                </a>
+                <ul class="list-inline director-description-list">
+                    <li role="presentation" class="active">
+                        <a href="#godniAmirLitemanBio" aria-controls="godniAmirLitemanBio" role="tab" data-toggle="tab">Bio</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#godniAmirLitemanPictures" aria-controls="godniAmirLitemanPictures" role="tab" data-toggle="tab">
+                            Pictures
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#godniAmirLitemanPress" aria-controls="godniAmirLitemanPress" role="tab" data-toggle="tab">
+                            Press
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="godniAmirLitemanBio">
+                        <p>Godni Amir Liteman, the founder & creative director of A Free Bird™, is a New York-based singer/songwriter, actor, and makeup artist. Godni was inspired to create A Free Bird, a growing non-profit benefiting artistic children with cancer, after his voice teacher’s husband was diagnosed with cancer. With his strong background in theater, dance, and music, Godni has personally experienced the healing power of the arts.</p>
+                        <p>Through his music, Godni brought comfort and solace to his voice teacher’s family in their time of greatest need. Today, Godni is committed to bringing that same healing power of the arts to young artists affected by cancer who would otherwise be forced to give up their creative outlets during their medical treatments. Through A Free Bird, Godni hopes to create a healing artistic environment for pediatric cancer patients.</p>
+                        <p>Godni’s work as a makeup artist has been prominently featured in print, on the runway, and at private events. His national print work includes covers of Women’s Wear Daily; articles in Intimate Magazine and O, The Oprah Magazine; billboards for Curve, the first documentary to feature plus-size models; features for Infatuation, the Mexican fashion periodical; Peggy Jennings catalog; and more.</p>
+                        <p>Off camera, Godni has worked on looks for U.N. High Commission of Human Rights official Mary Robinson, the Einstein Foundation, and numerous brands during New York Bridal Fashion Week, including Nico & Adrian. He has also served as the artistic director of hair and makeup for Sarantina Bridal and the Tikva Organization by Mark Ecko.</p>
+                        <p>Godni worked with Bobbi Brown and Chanel, working at various events with her throughout New York City. His celebrity clients through Bobbi Brown include Rihanna, Veanne Cox, Brooklyn Sudano, and photographers Gail Hadani and John Healy.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane " id="godniAmirLitemanPictures">
+                        <div class="spons-tabs">
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="godniAmirLitemanPress">
+                        <img src="/Content/images/press.png" />
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane well fade" id="johnBonanno">
+                <a href="" class="close-icon">
+                    <img src="/Content/images/icons/close-icon.png" />
+                </a>
+                <ul class="list-inline director-description-list">
+                    <li role="presentation" class="active">
+                        <a href="#johnBonannoBio" aria-controls="johnBonannoBio" role="tab" data-toggle="tab">Bio</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#johnBonannoPictures" aria-controls="johnBonannoPictures" role="tab" data-toggle="tab">
+                            Pictures
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#johnBonannoPress" aria-controls="johnBonannoPress" role="tab" data-toggle="tab">
+                            Press
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="johnBonannoBio">
+                        <p>Godni Amir Liteman, the founder & creative director of A Free Bird™, is a New York-based singer/songwriter, actor, and makeup artist. Godni was inspired to create A Free Bird, a growing non-profit benefiting artistic children with cancer, after his voice teacher’s husband was diagnosed with cancer. With his strong background in theater, dance, and music, Godni has personally experienced the healing power of the arts.</p>
+                        <p>Through his music, Godni brought comfort and solace to his voice teacher’s family in their time of greatest need. Today, Godni is committed to bringing that same healing power of the arts to young artists affected by cancer who would otherwise be forced to give up their creative outlets during their medical treatments. Through A Free Bird, Godni hopes to create a healing artistic environment for pediatric cancer patients.</p>
+                        <p>Godni’s work as a makeup artist has been prominently featured in print, on the runway, and at private events. His national print work includes covers of Women’s Wear Daily; articles in Intimate Magazine and O, The Oprah Magazine; billboards for Curve, the first documentary to feature plus-size models; features for Infatuation, the Mexican fashion periodical; Peggy Jennings catalog; and more.</p>
+                        <p>Off camera, Godni has worked on looks for U.N. High Commission of Human Rights official Mary Robinson, the Einstein Foundation, and numerous brands during New York Bridal Fashion Week, including Nico & Adrian. He has also served as the artistic director of hair and makeup for Sarantina Bridal and the Tikva Organization by Mark Ecko.</p>
+                        <p>Godni worked with Bobbi Brown and Chanel, working at various events with her throughout New York City. His celebrity clients through Bobbi Brown include Rihanna, Veanne Cox, Brooklyn Sudano, and photographers Gail Hadani and John Healy.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="johnBonannoPictures">
+                        <div class="spons-tabs">
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="johnBonannoPress">
+                        <img src="/Content/images/press.png" />
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane well fade" id="kalpanaPatel">
+                <a href="" class="close-icon">
+                    <img src="/Content/images/icons/close-icon.png" />
+                </a>
+                <ul class="list-inline director-description-list">
+                    <li role="presentation" class="active">
+                        <a href="#kalpanaPatelBio" aria-controls="kalpanaPatelBio" role="tab" data-toggle="tab">Bio</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#kalpanaPatelPictures" aria-controls="kalpanaPatelPictures" role="tab" data-toggle="tab">
+                            Pictures
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#kalpanaPatelPress" aria-controls="kalpanaPatelPress" role="tab" data-toggle="tab">
+                            Press
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="kalpanaPatelBio">
+                        <p>Godni Amir Liteman, the founder & creative director of A Free Bird™, is a New York-based singer/songwriter, actor, and makeup artist. Godni was inspired to create A Free Bird, a growing non-profit benefiting artistic children with cancer, after his voice teacher’s husband was diagnosed with cancer. With his strong background in theater, dance, and music, Godni has personally experienced the healing power of the arts.</p>
+                        <p>Through his music, Godni brought comfort and solace to his voice teacher’s family in their time of greatest need. Today, Godni is committed to bringing that same healing power of the arts to young artists affected by cancer who would otherwise be forced to give up their creative outlets during their medical treatments. Through A Free Bird, Godni hopes to create a healing artistic environment for pediatric cancer patients.</p>
+                        <p>Godni’s work as a makeup artist has been prominently featured in print, on the runway, and at private events. His national print work includes covers of Women’s Wear Daily; articles in Intimate Magazine and O, The Oprah Magazine; billboards for Curve, the first documentary to feature plus-size models; features for Infatuation, the Mexican fashion periodical; Peggy Jennings catalog; and more.</p>
+                        <p>Off camera, Godni has worked on looks for U.N. High Commission of Human Rights official Mary Robinson, the Einstein Foundation, and numerous brands during New York Bridal Fashion Week, including Nico & Adrian. He has also served as the artistic director of hair and makeup for Sarantina Bridal and the Tikva Organization by Mark Ecko.</p>
+                        <p>Godni worked with Bobbi Brown and Chanel, working at various events with her throughout New York City. His celebrity clients through Bobbi Brown include Rihanna, Veanne Cox, Brooklyn Sudano, and photographers Gail Hadani and John Healy.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="kalpanaPatelPictures">
+                        <div class="spons-tabs">
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                            <img src="/Content/images/pic-tabs2.png" alt="" />
+                            <img src="/Content/images/pic-tabs1.png" alt="" />
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="kalpanaPatelPress">
+                        <img src="/Content/images/press.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <section id="dark" class="section dark information">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-10 text-center-xs">
+                    <h3>Contact us</h3>
+                </div>
+                <div class="flex-column-reverse flex-wrap">
+                    <div class="col-md-offset-2 col-md-4 pull-left text-center-xs">
+                        <address>
+                            <strong class="contact-subheading">Contact us</strong>
+                            <br>Attn: A Free Bird
+                            <br>542 Atlantic Av
+                            <br>P.O. Box 170112
+                            <br>Brooklyn NY 11217
+                        </address>
+                        <address>
+                            <strong class="contact-subheading">To contact a specific department, please refer to the following:</strong>
+                            <dl class="dl-horizontal">
+                                <dt>Human Resources:</dt>
+                                <dd>hr@afreebird.org</dd>
+                                <br />
+                                <dt>Programs:</dt>
+                                <dd>programs@afreebird.org</dd>
+                                <br />
+                                <dt>Public Relations:</dt>
+                                <dd>pr@afreebird.org</dd>
+                                <br />
+                                <dt>Marketing:</dt>
+                                <dd>marketing@afreebird.org</dd>
+                            </dl>
+                        </address>
+                        <div class="social">
+                            <a href="https://twitter.com/AFreeBirdOrg">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.facebook.com/I-Am-A-Free-Bird-322794984718926/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/afreebirdorg/">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/AFreeBirdOrg">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="wrapper">
+                            <form class="contact">
+                                <strong class="text-center-xs">For general information, please complete the following form (Currently unavailable).</strong>
+                                <div class="form-group name">
+                                    <label for="name">your name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="please introduce">
+                                </div>
+                                <div class="form-group email">
+                                    <label for="email">Your email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                                </div>
+                                <div class="form-group subject">
+                                    <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="">
+                                </div>
+                                <div class="form-group message">
+                                    <label for="message">What's your message?</label>
+                                        <textarea class="form-control" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    Copyright © 2016, <a href="http://free-bird-8sph.azurewebsites.net">A Free Bird</a>. All Rights Reserved.<a href="https://www.8sph.com"> NJ web design and development by 8sph</a>
+                    <div class="pull-right smooth">
+                        <a class="top hvr-bob" href="#top">back to top <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // loader hides when page is loaded
+            $('#loader-bg').fadeOut(600);
+
+            $('body').scrollspy({ target: ".navbar", offset: 72 });
+            $(".smooth a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
