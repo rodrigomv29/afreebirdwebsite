@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Free Bird</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Content/css/hover-min.css">
+    <link rel="stylesheet" href="/Content/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+</head>
+
+<body id="top" role="document">
+    <nav class="navbar navbar-default navbar-fixed-top smooth yellow affix"     >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand pull-right visible-xs">
+                    LOGO
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <div class="menu-up-fix">
+                    <a href="/">HOME</a>
+                    <div style="float:right">
+                        <div class="social">
+                            <a href="https://twitter.com/AFreeBirdOrg">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.facebook.com/I-Am-A-Free-Bird-322794984718926/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/afreebirdorg/">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/AFreeBirdOrg">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+                        <div class="menu-up-shop">
+
+                            <a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <a href=""><span class="glyphicons glyphicon glyphicon-log-in"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav navbar-nav navbar-left">
+
+                    <li><a href="/about">About us</a></li>
+
+                    <!--<li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Tutors
+                                <span class="caret"></span>
+                                <span class="caret-mobile"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/tutors">Our tutors</a></li>
+                                <li><a href="/tutor"><s>Become a tutor</s></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://online.fliphtml5.com/ynvi/mzfr/" target="_blank">Magazine</a></li>
+                        <li><a href="/doctor-corner">Doctor's corner</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Programs
+                                <span class="caret"></span>
+                                <span class="caret-mobile"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/fightfree">Fight free</a></li>
+                                <li><a href="/freepro">Free and Pro</a></li>
+                                <li><a href="/dreaminspiration">Dream Inspiration</a></li>
+                                <li><a href=""><s>Kids supporting kids</s></a></li>
+                                <li><a href=""><s>Artists supporting artists</s></a></li>
+                            </ul>
+                        </li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>Get involved</span>
+                            <span class="caret"></span>
+                            <span class="caret-mobile"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/volunteer"><span>Become a volunteer</span></a></li>
+                            <li><a href="/tutor"><span>Become a tutor</span></a></li>
+                            <li><a href="/intern"><span>Become a intern</span></a></li>
+                            <li><a href="/ambassadors"><span>Become a ambassadors</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><s>Enroll Your Child or Hospital</s></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>AFB Family</span>
+                            <span class="caret"></span>
+                            <span class="caret-mobile"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/tutors"><span>Tutors</span></a></li>
+                            <li><a href=""><s>AFB Children</s></a></li>
+                            <li><a href="/ambassadors"><span>Ambassadors</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <!--<li><a href="/blog">Blog</a></li>
+                    <li><a href="/sponsors">Sponsors</a></li>
+                    <li><a href="/goods">Goods</a></li>
+                    <li><a href="#dark">Contact us</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span>AFB Happenings</span>
+                            <span class="caret"></span>
+                            <span class="caret-mobile"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/event"><span>Events</span></a></li>
+                            <li><a href="/blog"><span>Blog</span></a></li>
+                            <li><a href=""><s>Media Kit</s></a></li>
+                            <li><a href="http://online.fliphtml5.com/ynvi/mzfr/"><span>Magazine</span></a></li>
+                            <li><a href="/goods"><span>The Goods</span></a></li>
+                            <li><a href=""><s>I Am Campaign</s></a></li>
+                            <li><a href="/doctor-corner"><span>Doctor's Corner</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/sponsors">Sponsors</a></li>
+                    <li><a href=""><s>Donate</s></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div role="main">
+        <div id="loader-bg">
+            <svg id='loader-circle' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="54px" height="54px">
+            <style type="text/css">
+                .st0 {
+                    fill: none;
+                    stroke: #53351D;
+                    stroke-width: 10;
+                    stroke-miterlimit: 10;
+                }
+
+                .st1 {
+                    fill: none;
+                    stroke: #FFCC00;
+                    stroke-width: 11;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 11;
+                }
+</style>
+            <circle class="st0" cx="30" cy="30" r="24" />
+            <path class="st1" d="M30,6c13.25,0,24,10.75,24,24" />
+            </svg>
+        </div>
+        
+
+<section id="orange" class="section content pink">
+    <div class="clouds"></div>
+    <div class="grass"></div>
+    <div class="container">
+        <div class="subsection">
+            <h1>DREAM INSPIRATION</h1>
+            <p>
+                Our program strives to provide each child, whether fighting cancer or in remission from cancer, with the inspiration to pursue their own personal and artistic DREAM! Through A Free Bird™, these children engage with the flourishing NYC arts community and view the work of visionaries in their chosen artistic disciplines first- hand – whether on stage at a Broadway Theatre, within the legendary Metropolitan Museum of Art, or on a New York Fashion Week runway!
+            </p>
+            <p>
+                DREAM provides the tickets for a young artist, his or her parental guardian, and an A Free Bird supervisor to attend one of the many artistic venues in New York City! A photo of the group, along with the child and his or her A Free Bird mentor’s reflections on their special experience, will then be uploaded to the official A Free Bird website and Facebook page. The group can then share their artistic journey with family and friends!
+            </p>
+        </div>
+
+        <div class="row subsection">
+            <div class="col-md-5">
+                <h3>calendar of events</h3>
+                <div class="calendar-wrapper">
+                    <div class="calendar">
+                        <div class="month text-center">
+                            <span class="previuos-month">
+                                <i class="icon pointer-left"></i>
+                            </span>
+                            <span class="current-month">November</span>
+                            <span class="next-month">
+                                <i class="icon pointer-right"></i>
+                            </span>
+                        </div>
+                        <div class="days-of-week text-center">
+                            <span class="">Sun</span>
+                            <span class="">Mon</span>
+                            <span class="">Tue</span>
+                            <span class="">Wed</span>
+                            <span class="">Thu</span>
+                            <span class="">Fri</span>
+                            <span class="">Sat</span>
+                        </div>
+                        <div class="week text-center">
+                            <span class=""></span>
+                            <span class=""></span>
+                            <span class="">1</span>
+                            <span class="">2</span>
+                            <span class="">3</span>
+                            <span class="">4</span>
+                            <span class="">5</span>
+                        </div>
+                        <div class="week text-center">
+                            <span class="">6</span>
+                            <span class="">7</span>
+                            <span class="">8</span>
+                            <span class="">9</span>
+                            <span class="">10</span>
+                            <span class="">11</span>
+                            <span class="event active">12</span>
+                        </div>
+                        <div class="week text-center">
+                            <span class="">13</span>
+                            <span class="">14</span>
+                            <span class="">15</span>
+                            <span class="">16</span>
+                            <span class="event">17</span>
+                            <span class="">18</span>
+                            <span class="">19</span>
+                        </div>
+                        <div class="week text-center">
+                            <span class="">20</span>
+                            <span class="">21</span>
+                            <span class="">22</span>
+                            <span class="">23</span>
+                            <span class="">24</span>
+                            <span class="">25</span>
+                            <span class="">26</span>
+                        </div>
+                        <div class="week text-center">
+                            <span class="event">27</span>
+                            <span class="">28</span>
+                            <span class="">29</span>
+                            <span class="">30</span>
+                            <span class="">31</span>
+                            <span class="">32</span>
+                            <span class="">33</span>
+                        </div>
+
+                        <div class="event-wrapper">
+                            <h3>Event title</h3>
+                            <p>
+                                Our program strives to provide each child, whether fighting cancer or in remission from cancer,
+                                with the inspiration to pursue their own personal and artistic DREAM! Through A Free Bird...
+                            </p>
+
+                            <a href="/events/some-event" class="btn btn-details btn-lg">Event details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <h3>Upcoming events</h3>
+
+                <div class="events">
+                        <section>
+                            <a href="home/getevent/1">
+                                <img src="/content/upload/event2.png" alt="Event"/>
+                                <div class="bubble"></div>
+                                <div class="event-date">06.07</div>
+                            </a>
+                        </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <section id="dark" class="section dark information">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-10 text-center-xs">
+                    <h3>Contact us</h3>
+                </div>
+                <div class="flex-column-reverse flex-wrap">
+                    <div class="col-md-offset-2 col-md-4 pull-left text-center-xs">
+                        <address>
+                            <strong class="contact-subheading">Contact us</strong>
+                            <br>Attn: A Free Bird
+                            <br>542 Atlantic Av
+                            <br>P.O. Box 170112
+                            <br>Brooklyn NY 11217
+                        </address>
+                        <address>
+                            <strong class="contact-subheading">To contact a specific department, please refer to the following:</strong>
+                            <dl class="dl-horizontal">
+                                <dt>Human Resources:</dt>
+                                <dd>hr@afreebird.org</dd>
+                                <br />
+                                <dt>Programs:</dt>
+                                <dd>programs@afreebird.org</dd>
+                                <br />
+                                <dt>Public Relations:</dt>
+                                <dd>pr@afreebird.org</dd>
+                                <br />
+                                <dt>Marketing:</dt>
+                                <dd>marketing@afreebird.org</dd>
+                            </dl>
+                        </address>
+                        <div class="social">
+                            <a href="https://twitter.com/AFreeBirdOrg">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.facebook.com/I-Am-A-Free-Bird-322794984718926/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/afreebirdorg/">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/AFreeBirdOrg">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="wrapper">
+                            <form class="contact">
+                                <strong class="text-center-xs">For general information, please complete the following form (Currently unavailable).</strong>
+                                <div class="form-group name">
+                                    <label for="name">your name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="please introduce">
+                                </div>
+                                <div class="form-group email">
+                                    <label for="email">Your email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="example@mail.com">
+                                </div>
+                                <div class="form-group subject">
+                                    <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="">
+                                </div>
+                                <div class="form-group message">
+                                    <label for="message">What's your message?</label>
+                                        <textarea class="form-control" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-warning submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    Copyright © 2016, <a href="http://free-bird-8sph.azurewebsites.net">A Free Bird</a>. All Rights Reserved.<a href="https://www.8sph.com"> NJ web design and development by 8sph</a>
+                    <div class="pull-right smooth">
+                        <a class="top hvr-bob" href="#top">back to top <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // loader hides when page is loaded
+            $('#loader-bg').fadeOut(600);
+
+            $('body').scrollspy({ target: ".navbar", offset: 72 });
+            $(".smooth a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

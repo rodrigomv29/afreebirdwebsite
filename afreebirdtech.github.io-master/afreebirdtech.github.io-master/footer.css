@@ -1,0 +1,58 @@
+.social {
+    margin-top: 36px;
+
+    > a {
+        margin-right: 12px;
+        text-decoration: none;
+    }
+
+    .fa {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 14px;
+        padding: 5px 0;
+        color: $dark;
+        background: $white;
+        @include transition(all, .2s, ease-in);
+
+        @media (max-width: $sm) {
+            height: 35px;
+            width: 35px;
+            font-size: 21px;
+            padding: 7px 0;
+        }
+    }
+
+    .fa:hover {
+        color: $white;
+    }
+
+    .fa-twitter:hover {
+        background: #79ccf0;
+    }
+
+    .fa-facebook:hover {
+        background: #547bbd;
+    }
+
+    .fa-instagram:hover {
+        background: #f48239;
+    }
+
+    .fa-youtube-play:hover {
+        background: #ed351d;
+    }
+}
+
+.footer {
+    background-color: $footer;
+    color: $textColor;
+    padding: 36px 0;
+    color: $brown;
+
+    a {
+        color: $uiElement;
+    }
+}

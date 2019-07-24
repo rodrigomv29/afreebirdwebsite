@@ -1,5 +1,3 @@
-@@ -0,0 +1,466 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +7,11 @@
     <title>A Free Bird</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/css/tutor.css">
     <link rel="stylesheet" href="/Content/css/all.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css"
     <link rel="stylesheet" href="/Content/css/hover-min.css">
+    <script src="https://use.fontawesome.com/ed2f77dbd6.js"></script>
     <link rel="stylesheet" href="/Content/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Atma:300,400,500,600,700" rel="stylesheet"><!--needs to be linked at the begining(import to css is not working because of default.scss being watched firstly)-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -25,21 +25,261 @@
     .linkwraplink{
      background-color:#222222;
     }
+    html, body{
+        font-family: 'Atma', cursive;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+}
+    section.darkblue {
+    background-color: #006d88;
+}
+.content {
+    padding-top: 360px;
+}
+section {
+    position: relative;
+    padding: 60px 0;
+    overflow: hidden;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+section {
+    display: block;
+}
+    .navbar-default.yellow {
+    background-color: #fc0;
+    }
+    @media (min-width: 768px)
+    .affix.navbar-default.yellow{
+        background-color: #fc0;
+}
+    #loader-bg {
+    position: fixed;
+    left: 0px;
+    top: 74px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    @media (min-width: 768px)
+.affix {
+    padding: 12px 0;
+}
+.navbar-default {
+    background: none;
+    border: none;
+    webkit-transition: all .2s ease-in;
+    moz-transition: all .2s ease-in;
+    ms-transition: all .2s ease-in;
+    o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.affix {
+    position: fixed;
+}
+.navbar-default {
+    color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+@media (min-width: 768px)
+.navbar-fixed-bottom, .navbar-fixed-top {
+    border-radius: 0;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+@media (min-width: 768px)
+.navbar {
+    border-radius: 4px;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+nav {
+    display: block;
+}
+    .row{
+        display: block;
+        margin-bottom: 0;
+}
+    *,{
+        box-sizing:inherit;
+    }
+    .donate-buttons form {
+    width: 140px;
+    margin-right: .75em;
+    float: left;
+    text-align: center;
+}
+    fieldset, form {
+    margin: 0;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+    user agent stylesheet
+    form {
+    display: block;
+    margin-top: 0em;
+}
+    .tutor-title h1 {
+    margin-bottom: 25px;
+}
+    .decreased-font h1, .decreased-font h2 {
+    font-size: 2.66667em;
+    font-weight: 600;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+h1, .decreased-font h2 {
+    font-size: 3.33333em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h1, .decreased-font h2, h2, h3, h4, h5, h6 {
+    font-family: 'Atma', cursive;
+    font-weight: 400;
+    font-size: 18px;
+}
+.h1, h1 {
+    font-size: 36px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+h1 {
+    margin: .67em 0;
+    font-size: 2em;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:-webkit-any(article,aside,nav,section) h1 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+user agent stylesheet
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+    .tutor-title {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px; 
+}
+    .button, button[type=button], button[type=submit], input[type=button], input[type=submit] {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #004557;
+    color: #fff;
+    padding: 8px 24px;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+    button.btn-block, button[type=button].btn-block, button[type=submit].btn-block, input[type=button].btn-block, input[type=submit].btn-block {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px 0px 0px 50px;
+}
+    button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+    button, select {
+    text-transform: none;
+}
+    button {
+    overflow: visible;
+    align-content: center;
+    margin: 800px 800px 800px 800px;
+
+}
+    button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+    *, :after, :before {
+    box-sizing: inherit;
+    box-sizing: inherit;
+
     </style>
 
 
 </head>
 
 <body id="top" role="document">
-    <!--<nav class="navbar navbar-default navbar-fixed-top smooth yellow   landing-nav" data-spy="affix" data-offset-top="50"     >
+    <nav class="navbar navbar-default navbar-fixed-top smooth yellow   landing-nav" data-spy="affix" data-offset-top="50"     >
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                <!--<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                </button>-->
                 <a href="/" class="navbar-brand pull-right visible-xs">
                  <img src="/Content/images/AFB_Logo.png">
                 </a>
@@ -48,9 +288,13 @@
 
             <div class="collapse navbar-collapse" id="navbar-main">
                 <div class="menu-up-fix">
-                    
                     <div style="float:right">
+                        <ul>
                         <div class="social">
+                            <svg width="40" height="40">
+		<circle cx="50" cy="20" r="20" stroke="white" fill="white" style="margin: 0px 0px 0px 0px"></circle>
+                            
+
                             <a href="https://twitter.com/AFreeBirdOrg">
                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                             </a>
@@ -67,11 +311,12 @@
                         </div>
                         
                     </div>
+                            </ul>
                 </div>
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="/">Home</a></li>
 
-                    <li><a href="/about">About us</a></li>
+                    <li><a href="/about.html">About us</a></li>
 
                     <!--<li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -148,11 +393,11 @@
                         </ul>
                     </li>
                     <li><a href="/sponsors.html">Sponsors</a></li>
-                    <!--li><a href=""><s>Donate</s></a></li-->
+                    <li><a href=""><span>Donate</span></a></li>
                 </ul>
             </div>
         </div>
-    </nav>-->
+    </nav>
 
 
 
@@ -192,58 +437,57 @@
     <div class="grass"></div>
     
     <div class="wrapper-tutor">
-        <div class="tutor-title">
+        <div class="tutor-title" style="margin-top: -20%">
             <h1>Donate to a free bird</h1>
             <p>Donate Now Via Paypal<img src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" border="0" style="background-color: initial;"><br></p>
           </div>
-        <div class="row donate-buttons">
+    <div class="row donate-buttons" style="margin: 0px 0px 0px 25%; align-content: center;">
+        <ul class="nav navbar-nav navbar-left donate-buttons" id="donate-buttons" style="margin:auto;">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="C2P7RDCPJDN88">
+            <button type="submit" class="button btn-block">$50</button>
+            <li><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></li>
+        </form>
 
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="C2P7RDCPJDN88">
-		<button type="submit" class="button btn-block">$50</button>
-		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="NEF5BHAEK4VC6">
+            <button type="submit" class="button btn-block">$100</button>
+            <li><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></li>
+        </form>
 
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="NEF5BHAEK4VC6">
-		<button type="submit" class="button btn-block">$100</button>
-		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="LUJ6G3YD3TZRN">
+            <button type="submit" class="button btn-block">$500</button>
+            <li><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></li>
+        </form>
 
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="LUJ6G3YD3TZRN">
-		<button type="submit" class="button btn-block">$500</button>
-		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
-
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="LUJ6G3YD3TZRN">
-		<button type="submit" class="button btn-block">$1000</button>
-		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="LUJ6G3YD3TZRN">
+            <button type="submit" class="button btn-block">$1000</button>
+            <li><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></li>
+        </form>
 
 
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="DF29EG8ALRFWY">
-		<button type="submit" class="button btn-block">Other</button>
-		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
-
-        </div>
-    <h3>To send a donation check by mail:</h3>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="DF29EG8ALRFWY">
+            <button type="submit" class="button btn-block">Other</button>
+            <li><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></li>
+        </form>
+        </ul>
+    </div>
+    <div class="contact" style="text-align: center">
+    <h3 >To send a donation check by mail:</h3>
     <p><strong>A Free Bird
     <br>539 Atlantic Ave
-    <br>P.O. Box 170112&nbsp;</strong><strong>Brooklyn, NY 11217</strong></p>
-    <p>More children are diagnosed with cancer every year. While research shows the beneficial effects of therapeutic arts on those battling cancer and other chronic illnesses, this area is consistently neglected because funding for arts education continues to be cut from schools and government programs. With your help, AFB can help more children reveal their exceptional gifts while giving them strength and comfort during the fight of their lives. &nbsp;</p>
-    <p>A Free Bird (EIN 26-2963000) is a 501(c)3 not-for-profit.&nbsp;Under 501(c)3, donations are tax-deductible to the fullest extent provided by law.</p>
-
-    
-        <!--<div class="skills-choose-title">
+    <br>P.O. Box 170112&nbsp;</strong><strong>Brooklyn, NY 11217</strong></p><br><br>
+    <p style="padding:0px 250px 0px 250px">More children are diagnosed with cancer every year. While research shows the beneficial effects of therapeutic arts on those battling cancer and other chronic illnesses, this area is consistently neglected because funding for arts education continues to be cut from schools and government programs. With your help, AFB can help more children reveal their exceptional gifts while giving them strength and comfort during the fight of their lives. &nbsp;</p>
+    <br><br><p>A Free Bird (EIN 26-2963000) is a 501(c)3 not-for-profit.&nbsp;Under 501(c)3, donations are tax-deductible to the fullest extent provided by law.</p>
+            <!--<div class="skills-choose-title">
             <h5>ARE YOU QUALIFIED?</h5>
             <p class="lightblue">A Free Bird is always looking for motivated individuals to get involved with our organization.<br /> 
                 Applicants for A Free Bird Ambassadors should meet the following requirements:
@@ -388,13 +632,12 @@
             <div class="next-button-tutor">
                 <button type="submit" class="btn btn-warning">Send</button>
             </div>
-        </form>
-    </div>-->
+        </form>-->
+    </div>
     <section id="dark" class="section dark information">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-offset-2 col-md-10 text-center-xs">
-                    <h3>Contact us</h3>
                 </div>
                 <div class="flex-column-reverse flex-wrap">
                     <div class="col-md-offset-2 col-md-4 pull-left text-center-xs">
